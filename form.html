@@ -6,43 +6,53 @@
     <link rel="stylesheet" href="styles.css">
     <title>Cities of Idaho</title>
     <div class="container">
-      <h1><a href="boise.html">Cities of Idaho</a></h1>
+        <h1><a href="boise.html">Cities of Idaho</a></h1>
   
         <nav>
-          <ul>
-            <li><a href="boise.html">Boise</a></li>
-            <li><a href="stanley.html">Stanley</a></li>
-            <li><a href="salmon.html">Salmon</a></li>
-            <li><a href="form.html">Contact</a></li>
-          </ul>
+            <ul>
+                <li><a href="boise.html">Boise</a></li>
+                <li><a href="stanley.html">Stanley</a></li>
+                <li><a href="salmon.html">Salmon</a></li>
+                <li><a href="form.html">Contact</a></li>
+            </ul>
         </nav>
-      </div>
+    </div>
 </head>
-<div class="main">
+<body>
+    <div class="main-form">
+        <div class="form-section">
+            <h1>Contact Us</h1>
+            <form action="/submit" method="POST">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
 
-  <h1>Contact Us</h1>
-    
-    <form action="/submit" method="POST">
-      <label for="first-name">First Name</label>
-      <input type="text" id="first-name" name="first-name" required>
-      <label for="last-name">Last Name</label>
-      <input type="text" id="last-name" name="last-name" required>
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required>
-      <label for="confirm-email">Confirm Email Address</label>
-      <input type="email" id="confirm-email" name="confirm-email" required>
-      <label for="question">Your Question</label>
-      <textarea id="question" name="question" rows="4" required></textarea>
-      <button type="submit">Submit</button>
-  </form>
-  </div>
-    
-    <aside>
-      <h1><a href="https://idaho.gov">Learn More About Idaho!</a></h1>
-      <img src="images/capitol.jpg" alt="boise idaho capitol building">
-      <img src="images/goldbug.jpg" alt="famous idaho hotspring">
-      <img src="images/stanley-lake.jpg" alt="stanley lake, idaho">
-  </aside>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="confirm-email">Confirm Email Address</label>
+                <input type="email" id="confirm-email" name="confirm-email" required>
+
+                <label for="question">Your Question</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="images-section">
+          <h1><a href="https://idaho.gov">Learn More About Idaho!</a></h1>
+            <div class="image-grid">
+                <img src="images/capitol.jpg" alt="boise idaho capitol building">
+                <img src="images/goldbug.jpg" alt="famous idaho hotspring">
+                <img src="images/stanley-lake.jpg" alt="stanley lake, idaho">
+                <img src="images/road.jpeg" alt="idaho scenic byway">
+            </div>
+        </div>
+    </div>
 
 </body>
 <script src="app.js"></script>
+</html>

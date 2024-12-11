@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(249, 240, 228);
+    color: #555;
+    text-shadow: rgb(159, 157, 155) 1px 3px 9px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #84b0b8;
+    padding: 10px 20px;
+    box-shadow: 1px 3px 15px rgb(151, 145, 145);
+}
+
+.container h1 a {
+    margin: 0 auto;
+    list-style-type: none;
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.container h1 a:hover {
+    color:#555;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10%;
+    display: flex;
+    float: right;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.main .left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%; 
+    padding: 50px;
+}
+
+.left-content h2 {
+    text-align: center;
+}
+
+.left-content ul {
+    text-align: center;
+}
+
+.main table {
+    background-color: azure;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 1px 3px 15px rgb(151, 145, 145);
+    border-radius: 5px;
+}
+
+.main table, .main th, .main td {
+    border: 0.5px solid #ddd;
+}
+
+.main th, .main td {
+    padding: 15px;
+    text-align: center;
+}
+
+.main ul li {
+    list-style-type: none;
+}
+
+.main .right-content {
+    width: 40%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 3px 15px rgb(151, 145, 145);
+    border-radius: 5px;
+}
+
+aside h2 {
+    text-align: left;
+    font-size: 18px;
+}
+
+aside ol {
+    list-style-type: none;
+}
+
+#checkmark {
+    background-color: rgb(164, 207, 164);
+    margin-left: 3px;
+    position: absolute;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+    text-align: center;
+    color: #555;
+}
+
+.form-section {
+    width: 40%;
+    padding: 35px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-section label {
+    font-size: 16px;
+}
+
+.form-section input,
+.form-section textarea {
+    padding: 10px;
+    font-size: 16px;;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 1px 3px 15px rgb(151, 145, 145);
+}
+
+.form-section button {
+    padding: 10px;
+    background-color: #84b0b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    box-shadow: 1px 3px 15px rgb(151, 145, 145);
+}
+
+.form-section button:hover {
+    background-color: #5b8a8e; 
+}
+
+.images-section {
+    width: 60%;
+    padding-left: 70px;
+}
+
+.images-section a {
+    font-size: 25px;
+    text-decoration: none;
+    color:#484444;
+}
+
+.images-section h1 a:hover {
+    color:#84b0b8;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 1px 3px 15px rgb(151, 145, 145);
+}
