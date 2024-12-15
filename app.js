@@ -3,7 +3,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const confirmEmail = document.getElementById('confirm-email').value;
 
     if (email !== confirmEmail) {
-        alert("The email addresses you entered do not match. Please check your entries and try again");
-        event.preventDefault(); 
+        alert("The email addresses you entered do not match.");
+        event.preventDefault();
     }
 });
