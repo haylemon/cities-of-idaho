@@ -30,9 +30,8 @@ body {
 
 nav ul {
     list-style-type: none;
-    margin: 10%;
+    margin-right: 10%;
     display: flex;
-    float: right;
 }
 
 nav ul li a {
@@ -60,6 +59,15 @@ nav ul li a:hover {
     align-items: center;
     width: 60%; 
     padding: 50px;
+}
+
+.left-content img {
+    position: absolute;
+    margin-left: 130%;
+    margin-top: -28%;
+    height: 10%;
+    border-radius: 5px;
+    box-shadow: 1px 3px 15px rgb(151, 145, 145);
 }
 
 .left-content h2 {
@@ -119,7 +127,6 @@ aside ol {
 #checkmark {
     background-color: rgb(164, 207, 164);
     margin-left: 3px;
-    position: absolute;
 }
 
 .main-form {
@@ -167,8 +174,29 @@ aside ol {
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    position: relative;
     box-shadow: 1px 3px 15px rgb(151, 145, 145);
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+    transition: all 0.3s ease;
+    position: relative; 
+    bottom: 0; 
+}
+
+.form-section button:hover {
+    bottom: -5px; 
+    background-color: #5b8a8e;
+}
+
+#learn-more {
+    float: right;
+    margin-top: -6.1%;
+    margin-right: 27%;
+    font-size: 85%;
+}
+
+#learn-more:hover {
+    color: #5b8a8e; 
 }
 
 .form-section button:hover {
@@ -205,4 +233,44 @@ aside ol {
     border-radius: 5px;
     object-fit: cover;
     box-shadow: 1px 3px 15px rgb(151, 145, 145);
+}
+
+.about-section {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-top: 10%;
+}
+
+.about-section p {
+    max-width: 55%;
+}
+
+.images-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grid-home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px;
+    width: 80%;
+    height: 40%;
+}
+
+.image-grid-home img {
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
 }

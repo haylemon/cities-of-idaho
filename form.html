@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Cities of Idaho</title>
+    <title>Contact Us</title>
+</head>
+<header>
     <div class="container">
-        <h1><a href="boise.html">Cities of Idaho</a></h1>
+        <h1><a href="home.html">Cities of Idaho</a></h1>
   
         <nav>
-            <ul>
-                <li><a href="boise.html">Boise</a></li>
-                <li><a href="stanley.html">Stanley</a></li>
-                <li><a href="salmon.html">Salmon</a></li>
-                <li><a href="form.html">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="boise.html">Boise</a></li>
+            <li><a href="stanley.html">Stanley</a></li>
+            <li><a href="salmon.html">Salmon</a></li>
+            <li><a href="form.html">Contact</a></li>
+          </ul>
         </nav>
-    </div>
-</head>
+      </div>
+</header>
 <body>
     <div class="main-form">
-        <div class="form-section">
+        <section class="form-section">
             <h1>Contact Us</h1>
             <form id="contact-form" action="/submit" method="POST">
                 <label for="first-name">First Name</label>
@@ -40,10 +42,11 @@
 
                 <button type="submit">Submit</button>
             </form>
-        </div>
+        </section>
 
         <div class="images-section">
-          <h1><a href="https://idaho.gov">Learn More About Idaho!</a></h1>
+          <h1><a href="https://idaho.gov" target="_blank">Learn More About Idaho!</a></h1>
+          <a href="https://www.inidaho.com/fun_facts_list.asp" target="_blank"><i id="learn-more" class="fa-solid fa-glasses"></a></i>
             <div class="image-grid">
                 <img src="images/capitol.jpg" alt="boise idaho capitol building">
                 <img src="images/goldbug.jpg" alt="famous idaho hotspring">
@@ -54,5 +57,6 @@
     </div>
 
 </body>
+<script src="https://kit.fontawesome.com/d5383616f0.js" crossorigin="anonymous"></script>
 <script src="app.js"></script>
 </html>
